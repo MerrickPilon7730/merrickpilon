@@ -5,9 +5,13 @@ import { ProfilePicture } from "@/components/profile-pic";
 export default function Home() {
   return (
     <div className="max-w-[80%] mx-auto mt-30">
-      <div className="grid grid-cols-2 items-center justify-center">
-        <ProfilePicture />
-        <Introduction />
+      <div className="grid lg:grid-cols-2 items-center justify-center grid-cols-1">
+        <div className="order-2 lg:order-1">
+          <Introduction />
+        </div>
+        <div className="order-1 lg:order-2">
+          <ProfilePicture />
+        </div>
       </div>
     </div>
 
