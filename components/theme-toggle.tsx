@@ -18,8 +18,9 @@ export function ThemeToggle() {
   return (
     <div
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      className="hover:cursor-pointer"
     >
-      {theme === 'dark' ? <FaSun size={30} /> : <FaMoon size={30}/>}
+      {theme === 'dark' ? <FaSun size={30} className='hover:text-yellow-300' /> : <FaMoon size={30} className='hover:text-yellow-300'/>}
     </div>
   );
 };
