@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { Button } from "./ui/button"
 
 const buttonClass = "text-foreground hover:text-blue-600 hover:-translate-y-1 transition-colors hover:scale-110";
+//TODO: Update Introduction
 
 export function Introduction() {
     return(

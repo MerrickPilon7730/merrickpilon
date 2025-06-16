@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { ThemeToggle } from './theme-toggle';
 
+//TODO: Change profile pic
+
 export function ProfilePicture() {
   return (
     <div className="flex justify-center items-center mx-auto">
