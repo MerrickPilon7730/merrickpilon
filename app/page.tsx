@@ -1,6 +1,7 @@
 
 import { Introduction } from "@/components/introduction";
 import { ProfilePicture } from "@/components/profile-pic";
+import { Technical } from "@/components/technical-section";
 
 //TODO: Add another div for skills etc.
 
@@ -16,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex items-center justify-center mt-4">
-        Skills etc.
+        <Technical />
       </div>
     </div>
   );
