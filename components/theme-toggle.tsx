@@ -13,7 +13,7 @@ export function ThemeToggle() {
     setMounted(true)
   }, [])
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   return (
     <div
@@ -21,5 +21,5 @@ export function ThemeToggle() {
     >
       {theme === 'dark' ? <FaSun size={30} /> : <FaMoon size={30}/>}
     </div>
-  )
-}
+  );
+};

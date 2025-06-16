@@ -1,10 +1,13 @@
-import { ThemeToggle } from "@/components/theme-toggle";
 
+import { ProfilePicture } from "@/components/profile-pic";
 
 export default function Home() {
   return (
-    <div>
-      <ThemeToggle />
+    <div className="grid grid-cols-2">
+      <div>
+        <ProfilePicture />
+      </div>
+
     </div>
   );
 }
