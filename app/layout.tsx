@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Rubik, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const rubik = Rubik({
+  subsets: ['latin'],
+  variable: '--font-rubik',
+  display: 'swap',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
   subsets: ["latin"],
+  variable: "--font-roboto-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${rubik.variable} ${robotoMono.variable}`}
+      suppressHydrationWarning
+    >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="font-rubik"
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
