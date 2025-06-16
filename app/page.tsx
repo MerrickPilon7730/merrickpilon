@@ -4,9 +4,12 @@ import { ProfilePicture } from "@/components/profile-pic";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-2 mt-30">
-      <ProfilePicture />
-      <Introduction />
+    <div className="max-w-[80%] mx-auto mt-30">
+      <div className="grid grid-cols-2 items-center justify-center">
+        <ProfilePicture />
+        <Introduction />
+      </div>
     </div>
+
   );
 }
