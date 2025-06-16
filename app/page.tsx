@@ -15,7 +15,9 @@ export default function Home() {
           <ProfilePicture />
         </div>
       </div>
+      <div className="flex items-center justify-center mt-4">
+        Skills etc.
+      </div>
     </div>
-
   );
 }
