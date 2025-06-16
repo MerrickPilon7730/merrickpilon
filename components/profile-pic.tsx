@@ -5,16 +5,19 @@ import { ThemeToggle } from './theme-toggle';
 
 export function ProfilePicture() {
   return (
-    <div className="flex justify-center items-center max-w-[80%]">
-      <div className="relative w-[400px] h-[400px]">
+    <div className="flex justify-center items-center mx-auto">
+      <div className="relative w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-100 lg:h-100 mb-10">
         <Image
           src="/merrick.jpg"
           alt="Profile picture of Merrick"
-          width={400}
-          height={400}
+          fill
           className="rounded-full object-cover"
+          sizes="(max-width: 640px) 8rem,
+                 (max-width: 768px) 12rem,
+                 (max-width: 1024px) 16rem,
+                 24rem"
         />
-        <div className="absolute top-1 right-1 z-10">
+        <div className="absolute top-1 right-1 z-10 mb-10">
           <ThemeToggle />
         </div>
       </div>
