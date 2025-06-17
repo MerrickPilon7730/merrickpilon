@@ -3,6 +3,8 @@ import { Rubik, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
+import { Footer } from "@/components/footer";
+
 const rubik = Rubik({
   subsets: ['latin'],
   variable: '--font-rubik',
@@ -37,6 +39,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <Footer />
       </body>
     </html>
   );
