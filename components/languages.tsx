@@ -17,7 +17,7 @@ const languages = [
 export function Languages() {
     return(
         <div>
-            <h1 className="font-bold flex items-center justify-center text-4xl">Languages</h1>
+            <h1 className="font-bold flex items-center justify-center text-3xl">Languages</h1>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
                 {languages.map((lang, index) => (
                 <p key={index} className="w-[10%] min-w-[100px] text-center">
@@ -25,7 +25,7 @@ export function Languages() {
                 </p>
                 ))}
             </div>
-            <hr className="my-6 border-t dark:border-white border-black" />
+            <hr className="flex mx-auto max-w-[80%] my-6 border-t dark:border-white border-black" />
         </div>
     )
 }
