@@ -19,7 +19,7 @@ export function ProfilePicture() {
                  (max-width: 1024px) 16rem,
                  24rem"
         />
-        <div className="absolute top-1 right-1 z-10 mb-10">
+        <div className="absolute top-1 right-1 max-sm:translate-x-6 z-10">
           <ThemeToggle />
         </div>
       </div>
