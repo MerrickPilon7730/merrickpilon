@@ -23,10 +23,10 @@ const frameworks = [
 export function Frameworks() {
     return(
         <div>
-            <h1 className="font-bold flex items-center justify-center text-3xl">Frameworks & Libraries</h1>
-            <div className="flex flex-wrap justify-center gap-4 mt-4">
+            <h1 className="font-bold flex items-center justify-center text-3xl">FRAMEWORKS & LIBRARIES</h1>
+            <div className="flex flex-wrap justify-center gap-4 mt-4 font-mono">
                 {frameworks.map((framework, index) => (
-                <p key={index} className="w-[15%] min-w-[100px] text-center">
+                <p key={index} className="w-[18%] min-w-[100px] text-center">
                     {framework}
                 </p>
                 ))}

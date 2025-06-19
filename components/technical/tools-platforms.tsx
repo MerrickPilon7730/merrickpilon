@@ -13,8 +13,8 @@ const tools = [
 export function Tools() {
     return(
         <div>
-            <h1 className="font-bold flex items-center justify-center text-3xl">Tools & Platforms</h1>
-            <div className="flex flex-wrap justify-center gap-4 mt-4">
+            <h1 className="font-bold flex items-center justify-center text-3xl">TOOLS & PLATFORMS</h1>
+            <div className="flex flex-wrap justify-center gap-4 mt-4 font-mono">
                 {tools.map((tool, index) => (
                 <p key={index} className="w-[12%] min-w-[100px] text-center">
                     {tool}
