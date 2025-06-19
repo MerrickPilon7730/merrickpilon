@@ -1,6 +1,7 @@
 import { Databases } from "./databases";
 import { Frameworks } from "./frameworks";
 import { Languages } from "./languages";
+import { Tools } from "./tools-platforms";
 
 export function Technical() {
     return(
@@ -8,6 +9,7 @@ export function Technical() {
             <Languages />
             <Frameworks />
             <Databases />
+            <Tools />
         </div>
     );
 };
