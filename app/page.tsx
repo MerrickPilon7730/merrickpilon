@@ -3,8 +3,6 @@ import { Introduction } from "@/components/introduction";
 import { ProfilePicture } from "@/components/profile-pic";
 import { Technical } from "@/components/technical-section";
 
-//TODO: Add another div for skills etc.
-
 export default function Home() {
   return (
     <div className="max-w-[80%] mx-auto mt-30">
