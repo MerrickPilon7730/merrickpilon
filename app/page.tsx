@@ -1,7 +1,10 @@
 
 import { Introduction } from "@/components/introduction";
 import { ProfilePicture } from "@/components/profile-pic";
-import { Technical } from "@/components/technical-section";
+import { ProjectCarousel } from "@/components/projects";
+import { Technical } from "@/components/technical/technical-section-wrapper";
+
+//TODO: Add projects carousel
 
 export default function Home() {
   return (
