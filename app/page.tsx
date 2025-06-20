@@ -1,7 +1,7 @@
 
 import { Introduction } from "@/components/introduction";
 import { ProfilePicture } from "@/components/profile-pic";
-//import { ProjectCarousel } from "@/components/projects";
+import { ProjectCarousel } from "@/components/projects";
 import { Technical } from "@/components/technical/technical-section-wrapper";
 
 //TODO: Add projects carousel
@@ -17,11 +17,9 @@ export default function Home() {
           <ProfilePicture />
         </div>
       </div>
-      {/*
       <div className="flex items-center justify-center">
         <ProjectCarousel />
       </div>
-      */}
       <div className="flex items-center justify-center mt-4">
         <Technical />
       </div>

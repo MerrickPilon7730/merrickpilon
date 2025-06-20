@@ -9,14 +9,14 @@ export const ProjectSchema = z.object({
     images: z.array(z.string()),
 });
 
-export type Project = z.infer<typeof ProjectSchema>;
+export type ProjectType = z.infer<typeof ProjectSchema>;
 
 export const projects = [
   {
     id: 1,
     title: 'Budgeting App',
     displayImage: '/BudgetApp/overview.PNG',
-    description: 'Track income and expenses with graphs.',
+    description: 'Track your monthly income and expenses.',
     images: [
       '/BudgetApp/signin.PNG', 
       '/BudgetApp/overview.PNG', 
@@ -44,23 +44,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Finance App',
-    displayImage: '/merrick.jpg',
-    description: 'Monitor stocks, crypto, and investments.',
+    title: 'MY WEBSITE!',
+    displayImage: '/Website/website.PNG',
+    description: "You're already here! Dont go down the rabbit hole...",
     images: []
-  },
-  {
-    id: 4,
-    title: 'Password Manager',
-    displayImage: '/merrick.jpg',
-    description: 'Real-time crypto data & portfolio summary.',
-    images: []
-  },
-  {
-    id: 5,
-    title: 'Task Manager',
-    displayImage: '/merrick.jpg',
-    description: 'Organize tasks with a beautiful UI.',
-    images: [],
   },
 ];
