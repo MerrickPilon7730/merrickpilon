@@ -1,7 +1,7 @@
 
 import { Introduction } from "@/components/introduction";
 import { ProfilePicture } from "@/components/profile-pic";
-import { ProjectCarousel } from "@/components/projects";
+import { ProjectCarousel } from "@/components/projects/projects";
 import { Technical } from "@/components/technical/technical-section-wrapper";
 
 //TODO: Add projects carousel
