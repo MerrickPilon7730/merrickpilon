@@ -8,7 +8,7 @@ import { ThemeToggle } from './theme-toggle';
 export function ProfilePicture() {
   return (
     <div className="flex justify-center items-center mx-auto">
-      <div className="relative w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-100 lg:h-100 mb-10">
+      <div className="relative w-50 h-50 md:w-64 md:h-64 lg:w-100 lg:h-100 mb-10">
         <Image
           src="/merrick.jpg"
           alt="Profile picture of Merrick"
