@@ -13,7 +13,7 @@ export function ProfilePicture() {
           src="/merrick.jpg"
           alt="Profile picture of Merrick"
           fill
-          className="rounded-full object-cover"
+          className="rounded-full object-cover border-2 border-black dark:border-white"
           sizes="(max-width: 640px) 8rem,
                  (max-width: 768px) 12rem,
                  (max-width: 1024px) 16rem,
