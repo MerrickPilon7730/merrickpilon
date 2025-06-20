@@ -33,14 +33,13 @@ export function Introduction() {
                 technologies with strong SQL skills in PostgreSQL/MySQL. Demonstrated ability to architect REST APIs, automate workflows, and deploy apps 
                 using AWS and CI/CD pipelines. Passionate about writing clean, testable code and collaborating in Agile teams.
             </p>
-            <a href="/Pilon_FS_Resume.pdf" download>
-                <Button 
-                    className="mt-4 hover:bg-blue-600 bg-blue-400 hover:scale-110 cursor-pointer rounded-3xl transition-colors flex mx-auto px-8"
-                    size="lg"
-                    >
-                        Resume
-                </Button>
-            </a>
+            <Button 
+                className="mt-4 hover:bg-blue-600 bg-blue-400 hover:scale-110 cursor-pointer rounded-3xl transition-colors flex mx-auto px-8"
+                size="lg"
+                >
+                    <a href="/Pilon_FS_Resume.pdf" download>Resume</a>
+            </Button>
+            
         </div>
     )
 }
