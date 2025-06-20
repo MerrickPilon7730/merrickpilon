@@ -44,9 +44,11 @@ export function ProjectCarousel() {
 
       <div className="flex justify-center mt-4 gap-2">
         {projects.map((_, i) => (
-          <div
+          <button
             key={i}
-            className={`h-2 w-2 rounded-full ${i === current ? 'bg-blue-600' : 'bg-gray-400'}`}
+            onClick={() => setCurrent(i)}
+            className={`h-2 w-2 rounded-full hover:cursor-pointer ${i === current ? 'bg-blue-600' : 'bg-gray-400'}`}
+            aria-label={`Go to project ${i + 1}`}
           />
         ))}
       </div>
