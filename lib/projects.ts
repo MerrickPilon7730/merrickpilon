@@ -14,7 +14,7 @@ export type ProjectType = z.infer<typeof ProjectSchema>;
 export const projects = [
   {
     id: 1,
-    title: 'Budgeting App',
+    title: 'BUDGETING APP',
     displayImage: '/BudgetApp/overview.PNG',
     description: 'Track your monthly income and expenses.',
     images: [
@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Cerebral Solutions',
+    title: 'CEREBRAL SOLUTIONS',
     displayImage: '/Cerebral-Solutions/landing.PNG',
     description: 'AI-Powered mental health tracker.',
     images: [
