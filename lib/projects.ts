@@ -49,4 +49,11 @@ export const projects = [
     description: "You're already here! Dont go down the rabbit hole...",
     images: []
   },
+  {
+    id: 4,
+    title: 'TICKER TRACKER (IN PROGRESS)',
+    displayImage: '/TickerTracker/search.PNG',
+    description: "Real-time stock market tracker.",
+    images: []
+  },
 ];
