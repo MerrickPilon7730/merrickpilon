@@ -16,9 +16,9 @@ export function ProjectCard({ project }: props) {
           className="object-cover"
         />
       </div>
-      <div className="p-4">
+      <div className="p-4 border-t border-black dark:border-white">
         <h3 className="text-2xl font-bold">{project.title}</h3>
-        <p className="text-gray-600 dark:text-gray-300 font-mono">{project.description}</p>
+        <p className="font-mono">{project.description}</p>
       </div>
     </div>
   );
