@@ -1,7 +1,7 @@
 
 
 const frameworks = [
-    "Next.js (React + SSR/SSG)",
+    "Next.js(React + SSR/SSG)",
     "Vue.js",
     "Angular",
     "Express.js",

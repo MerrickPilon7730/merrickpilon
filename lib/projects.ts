@@ -17,14 +17,30 @@ export const projects = [
     title: 'Budgeting App',
     displayImage: '/BudgetApp/overview.PNG',
     description: 'Track income and expenses with graphs.',
-    images: ['/BudgetApp/signin.PNG', '/BudgetApp/overview.PNG', '/BudgetApp/transactions.PNG', '/BudgetApp/import.PNG', '/BudgetApp/accounts.PNG', '/BudgetApp/categories.PNG']
+    images: [
+      '/BudgetApp/signin.PNG', 
+      '/BudgetApp/overview.PNG', 
+      '/BudgetApp/transactions.PNG', 
+      '/BudgetApp/import.PNG', 
+      '/BudgetApp/accounts.PNG', 
+      '/BudgetApp/categories.PNG',
+    ]
   },
   {
     id: 2,
-    title: 'Budgeting App',
-    displayImage: '/merrick.jpg',
-    description: 'Track income and expenses with graphs.',
-    images: []
+    title: 'Cerebral Solutions',
+    displayImage: '/Cerebral-Solutions/landing.PNG',
+    description: 'AI-Powered mental health tracker.',
+    images: [
+      '/Cerebral-Solutions/landing.PNG', 
+      '/Cerebral-Solutions/dashboard.PNG',
+      '/Cerebral-Solutions/login.PNG',
+      '/Cerebral-Solutions/survey.PNG',
+      '/Cerebral-Solutions/report.PNG',
+      '/Cerebral-Solutions/all-reports.PNG',
+      '/Cerebral-Solutions/call.PNG',
+      '/Cerebral-Solutions/library.PNG'
+    ]
   },
   {
     id: 3,
