@@ -2,10 +2,13 @@
 
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+
 import { ProjectCard } from './project-card';
-import { projects } from '@/lib/projects';
+import { ProjectModal } from './project-modal';
+import { projects, ProjectType } from '@/lib/projects';
 
 export function ProjectCarousel() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [current, setCurrent] = useState(0);
   const total = projects.length;
 
@@ -16,8 +19,12 @@ export function ProjectCarousel() {
   const prev = () => {
     setCurrent((prev) => (prev - 1 + total) % total);
   };
-
+ 
   const project = projects[current];
+
+  const handleProjectClick = () => {
+    setIsModalOpen(true);
+  }
 
   return (
     <div className="w-full sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] mx-auto text-center py-6">
@@ -32,6 +39,10 @@ export function ProjectCarousel() {
         </button>
 
         <ProjectCard project={project} />
+        <ProjectModal 
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
 
         <button
           aria-label='Next Project'

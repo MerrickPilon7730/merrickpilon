@@ -7,12 +7,15 @@ import {
   CardTitle, 
 } from "@/components/ui/card";
 
+import { ProjectType } from "@/lib/projects";
+
 type Props ={
     isOpen: boolean;
     onClose: () => void;
+    project: ProjectType | null;
 }
 
-export function ProjectModal({isOpen, onClose}: Props) {
+export function ProjectModal({isOpen, onClose, project}: Props) {
     if (!isOpen) return null;
 
     return(
@@ -24,7 +27,7 @@ export function ProjectModal({isOpen, onClose}: Props) {
                 <Card>
                     <CardHeader>
                         <CardTitle>
-                            Title
+                            {project?.title}
                         </CardTitle>
                     </CardHeader>
                     <CardContent >
