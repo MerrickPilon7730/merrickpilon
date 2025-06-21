@@ -1,30 +1,37 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import { ProjectCard } from './project-card';
 import { ProjectModal } from './project-modal';
-import { projects, ProjectType } from '@/lib/projects';
+import { projects } from '@/lib/projects';
 
 export function ProjectCarousel() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [current, setCurrent] = useState(0);
   const total = projects.length;
 
-  const next = () => {
+  const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % total);
-  };
+  }, [total]);
 
-  const prev = () => {
+  const prev = useCallback(() => {
     setCurrent((prev) => (prev - 1 + total) % total);
-  };
+  }, [total]);
  
   const project = projects[current];
 
-  const handleProjectClick = () => {
-    setIsModalOpen(true);
-  }
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    };
+
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [next, prev]);
+
 
   return (
     <div className="w-full sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] mx-auto text-center py-6">
@@ -38,11 +45,18 @@ export function ProjectCarousel() {
           <ChevronLeft />
         </button>
 
-        <ProjectCard project={project} />
-        <ProjectModal 
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
+        <ProjectCard 
+          project={project}
+          onClick={() => setIsModalOpen(true)} 
         />
+        {isModalOpen && (
+          <ProjectModal
+            isOpen={true}
+            onClose={() => setIsModalOpen(false)}
+            project={project}
+          />
+        )}
+
 
         <button
           aria-label='Next Project'
