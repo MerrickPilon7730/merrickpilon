@@ -24,7 +24,7 @@ export function ProjectModal({isOpen, onClose, project}: Props) {
             onClick={onClose}
         >
             <div className="w-[90%] max-w-4xl"  onClick={(e) => e.stopPropagation()}>
-                <Card>
+                <Card className="bg-white dark:bg-gray-800 dark:text-white">
                     <CardHeader>
                         <CardTitle>
                             {project?.title}
