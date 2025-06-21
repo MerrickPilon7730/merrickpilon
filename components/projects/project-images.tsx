@@ -11,7 +11,7 @@ export function ProjectImages({project}: Props) {
 
     return(
         <div className="flex mx-auto">
-            <div className="relative w-full h-60">
+            <div className="relative w-full h-60 flex items-center justify-center">
                 <Image
                 src={project.images[0]}
                 alt={project.title}
