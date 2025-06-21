@@ -3,6 +3,7 @@ import { z } from 'zod';
 
 export const ProjectSchema = z.object({
     id: z.number(),
+    url: z.string(),
     title: z.string(),
     displayImage: z.string(),
     description: z.string(),
@@ -15,6 +16,7 @@ export const projects = [
   {
     id: 1,
     title: 'BUDGETING APP',
+    url: '',
     displayImage: '/BudgetApp/overview.PNG',
     description: 'Track your monthly income and expenses.',
     images: [
@@ -29,6 +31,7 @@ export const projects = [
   {
     id: 2,
     title: 'CEREBRAL SOLUTIONS',
+    url: '',
     displayImage: '/Cerebral-Solutions/landing.PNG',
     description: 'AI-Powered mental health tracker.',
     images: [
@@ -45,15 +48,17 @@ export const projects = [
   {
     id: 3,
     title: 'MY WEBSITE!',
+    url: 'www.merrickpilon.ca',
     displayImage: '/Website/website.PNG',
     description: "You're already here! Dont go down the rabbit hole...",
-    images: []
+    images: ['/Website/website.PNG']
   },
   {
     id: 4,
     title: 'TICKER TRACKER (IN PROGRESS)',
+    url: '',
     displayImage: '/TickerTracker/search.PNG',
     description: "Real-time stock market tracker.",
-    images: []
+    images: ['/TickerTracker/search.PNG']
   },
 ];
