@@ -24,13 +24,14 @@ export function ProjectCarousel() {
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
+      if(isModalOpen) return;
       if (e.key === 'ArrowLeft') prev();
       if (e.key === 'ArrowRight') next();
     };
 
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [next, prev]);
+  }, [next, prev, isModalOpen]);
 
 
   return (
