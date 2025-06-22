@@ -26,14 +26,14 @@ export function ProjectModal({isOpen, onClose, project}: Props) {
             onClick={onClose}
         >
             <div className="w-[90%] max-w-[70%]"  onClick={(e) => e.stopPropagation()}>
-                <Card className="bg-white dark:bg-gray-800 dark:text-white">
+                <Card className="bg-white flex-col dark:bg-gray-800 dark:text-white">
                     <CardHeader>
-                        <CardTitle className="flex grid-cols-1 lg:grid-cols-2 gap-x-2">
-                            <div className="order-1 lg:order-2 max-w-[50%] w-[45%]">
+                        <CardTitle className="grid grid-cols-1 lg:grid-cols-2 gap-x-2 w-[95%] mx-auto mt-2">
+                            <div className="order-1 lg:order-2">
                                 <ProjectHeader project={project}/>
                             </div>
-                            <div className="order-2 lg:order-1 max-w-50% w-[45%]">
-                                <ProjectImages project={project}/>
+                            <div className="order-2 lg:order-1">
+                                <ProjectImages project={project} isActive={isOpen}/>
                             </div>
                         </CardTitle>
                     </CardHeader>
