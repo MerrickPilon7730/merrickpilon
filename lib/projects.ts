@@ -8,6 +8,8 @@ export const ProjectSchema = z.object({
     displayImage: z.string(),
     description: z.string(),
     images: z.array(z.string()),
+    imageDescription: z.array(z.string()),
+    technologies: z.array(z.string()),
 });
 
 export type ProjectType = z.infer<typeof ProjectSchema>;
@@ -26,7 +28,16 @@ export const projects = [
       '/BudgetApp/import.PNG', 
       '/BudgetApp/accounts.PNG', 
       '/BudgetApp/categories.PNG',
-    ]
+    ],
+    imageDescription:[
+      "Sign-in page.",
+      "Dashboard with insights on income and expenses for the past month.",
+      "Transaction history page.",
+      "Importing all transactions from a monthly CSV from your bank.",
+      "Accounts page, (your checking, savings, etc. account)",
+      "Categories page, (money spent on food, hobbies, clothing, etc.)"
+    ],
+    technologies: [],
   },
   {
     id: 2,
@@ -43,7 +54,9 @@ export const projects = [
       '/Cerebral-Solutions/all-reports.PNG',
       '/Cerebral-Solutions/call.PNG',
       '/Cerebral-Solutions/library.PNG'
-    ]
+    ],
+    imageDescription:[],
+    technologies: [],
   },
   {
     id: 3,
@@ -51,7 +64,9 @@ export const projects = [
     url: 'www.merrickpilon.ca',
     displayImage: '/Website/website.PNG',
     description: "You're already here! Dont go down the rabbit hole...",
-    images: ['/Website/website.PNG']
+    images: ['/Website/website.PNG'],
+    imageDescription:[],
+    technologies: [],
   },
   {
     id: 4,
@@ -59,6 +74,8 @@ export const projects = [
     url: '',
     displayImage: '/TickerTracker/search.PNG',
     description: "Real-time stock market tracker.",
-    images: ['/TickerTracker/search.PNG']
+    images: ['/TickerTracker/search.PNG'],
+    imageDescription:[],
+    technologies: [],
   },
 ];
