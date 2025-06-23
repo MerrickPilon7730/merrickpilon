@@ -10,6 +10,7 @@ import {
 import { ProjectType } from "@/lib/projects";
 import { ProjectHeader } from "./project-header";
 import { ProjectImages } from "./project-images";
+import { ProjectContent } from "./project-content";
 
 type Props ={
     isOpen: boolean;
@@ -38,7 +39,7 @@ export function ProjectModal({isOpen, onClose, project}: Props) {
                         </CardTitle>
                     </CardHeader>
                     <CardContent >
-                        Content
+                        <ProjectContent />
                     </CardContent>
                 </Card>
             </div>
