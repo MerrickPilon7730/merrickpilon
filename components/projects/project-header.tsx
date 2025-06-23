@@ -23,28 +23,28 @@ export function ProjectHeader({project}: Props) {
             <div className="w-[80%] mt-4">
                 <div className="flex gap-4">
                     <p className="font-bold w-[120px] text-left">Languages:</p>
-                    <p className="font-mono flex-1 justify-left">{project?.technologies.languages}</p>
+                    <p className="font-mono flex-1 text-left">{project?.technologies.languages}</p>
                 </div>
             </div>
 
             <div className="w-[80%] mt-4">
                 <div className="flex gap-4">
                     <p className="font-bold w-[120px] text-left">Front-end:</p>
-                    <p className="font-mono flex-1 justify-left">{project?.technologies.frontend}</p>
+                    <p className="font-mono flex-1 text-left">{project?.technologies.frontend}</p>
                 </div>
             </div>
 
             <div className="w-[80%] mt-4">
                 <div className="flex gap-4">
                     <p className="font-bold w-[120px] text-left">Back-end:</p>
-                    <p className="font-mono flex-1 justify-left">{project?.technologies.backend}</p>
+                    <p className="font-mono flex-1 text-left">{project?.technologies.backend}</p>
                 </div>
             </div>
 
             <div className="w-[80%] mt-4">
                 <div className="flex gap-4">
                     <p className="font-bold w-[120px] text-left">Tools:</p>
-                    <p className="font-mono flex-1 justify-left">{project?.technologies.tools}</p>
+                    <p className="font-mono flex-1 text-left">{project?.technologies.tools}</p>
                 </div>
             </div>
         </div>
