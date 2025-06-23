@@ -36,6 +36,7 @@ export function ProjectImages({project, isActive}: Props) {
     if (!project || total === 0) return null;
     
     const image = project.images[current];
+    const imageDescription = project.imageDescription[current];
 
     return(
         <div className="flex flex-col mx-auto w-[90%]">
@@ -47,6 +48,7 @@ export function ProjectImages({project, isActive}: Props) {
                 >
                 <ChevronLeft />
                 </button>
+
                 <div className="relative w-full h-60 flex items-center justify-center overflow-hidden">
                     <Image
                     src={image}
@@ -55,6 +57,7 @@ export function ProjectImages({project, isActive}: Props) {
                     className="object-cover rounded-2xl border-2 border-black dark:border-white"
                     />
                 </div>
+
                 <button
                     aria-label='Next Project'
                     onClick={next}
@@ -63,6 +66,7 @@ export function ProjectImages({project, isActive}: Props) {
                     <ChevronRight />
                 </button>
             </div>
+
             <div className="flex justify-center gap-2 mt-4">
                 {project.images.map((_, i) => (
                 <button
@@ -72,6 +76,10 @@ export function ProjectImages({project, isActive}: Props) {
                     aria-label={`Go to project ${i + 1}`}
                 />
                 ))}
+            </div>
+
+            <div className="flex mx-auto mt-4 font-mono h-10 max-w-[80%]">
+                <p>{imageDescription}</p>
             </div>
         </div>
     );

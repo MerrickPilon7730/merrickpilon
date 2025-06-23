@@ -58,7 +58,6 @@ export function ProjectCarousel() {
           />
         )}
 
-
         <button
           aria-label='Next Project'
           onClick={next}
