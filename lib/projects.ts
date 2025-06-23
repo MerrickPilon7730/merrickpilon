@@ -47,7 +47,7 @@ export const projects = [
     ],
     technologies: {
       languages: "TypeScript, JavaScript",
-      frontend: "Next.js, React, Tailwind CSS, Zod, TanStack Query, Zustand, Sonner",
+      frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Zod, TanStack Query, Zustand, Sonner",
       backend: "Drizzle ORM, PostgreSQL, Hono, Clerk, Neon.tech",
       tools: "Tools",
     },
@@ -80,7 +80,7 @@ export const projects = [
     ],
     technologies: {
       languages: "TypeScript, JavaScript",
-      frontend: "Next.js, React,Tailwind CSS, Zod, Recharts, Sonner",
+      frontend: "Next.js, React,Tailwind CSS, Shadcn UI, Zod, Recharts, Sonner",
       backend: "Prisma ORM, PostgreSQL, NextAuth, Neon.tech",
       tools: "Vercel, Concurrently, bcrypt",
     },
@@ -101,7 +101,7 @@ export const projects = [
     ],
     technologies: {
       languages: "TypeScript, JavaScript",
-      frontend: "Next.js, React, Tailwind CSS, Zod",
+      frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Zod",
       backend: "No backend needed!",
       tools: "AWS Amplify, AWS Route 53",
     },
@@ -109,7 +109,7 @@ export const projects = [
   {
     id: 4,
     title: 'TICKER TRACKER (IN PROGRESS)',
-    url: '',
+    url: 'URL',
     displayImage: '/TickerTracker/search.PNG',
     description: "Real-time stock market tracker.",
     images: ['/TickerTracker/search.PNG'],
@@ -117,10 +117,10 @@ export const projects = [
       "Search page to find stocks."
     ],
     technologies: {
-      languages: "",
-      frontend: "",
-      backend: "",
-      tools: "",
+      languages: "TypeScript, JavaScript",
+      frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Zod, TanStack Query, Zustand, Sonner",
+      backend: "AWS DynamoDB, Hono, Clerk",
+      tools: "AWS Ampify",
     },
   },
 ];
