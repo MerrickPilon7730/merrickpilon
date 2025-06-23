@@ -108,8 +108,8 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'TICKER TRACKER (IN PROGRESS)',
-    url: 'URL',
+    title: 'TICKER TRACKER(IN PROGRESS)',
+    url: 'main.duhl94hce2rn6.amplifyapp.com/',
     displayImage: '/TickerTracker/search.PNG',
     description: "Real-time stock market tracker.",
     images: ['/TickerTracker/search.PNG'],
