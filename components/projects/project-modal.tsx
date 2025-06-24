@@ -38,8 +38,8 @@ export function ProjectModal({isOpen, onClose, project}: Props) {
                             </div>
                         </CardTitle>
                     </CardHeader>
-                    <CardContent >
-                        <ProjectContent />
+                    <CardContent className="flex felx-cols justify-center">
+                        <ProjectContent project={project}/>
                     </CardContent>
                 </Card>
             </div>
