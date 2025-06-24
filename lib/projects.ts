@@ -18,6 +18,8 @@ export const ProjectSchema = z.object({
     images: z.array(z.string()),
     imageDescription: z.array(z.string()),
     technologies: TechnologiesSchema,
+    content: z.string(),
+    features: z.array(z.string()),
 });
 
 export type ProjectType = z.infer<typeof ProjectSchema>;
@@ -26,7 +28,7 @@ export const projects = [
   {
     id: 1,
     title: 'BUDGETING APP',
-    url: 'URL',
+    url: 'Not Hosted',
     displayImage: '/BudgetApp/overview.PNG',
     description: 'Track your monthly income and expenses.',
     images: [
@@ -47,15 +49,22 @@ export const projects = [
     ],
     technologies: {
       languages: "TypeScript, JavaScript",
-      frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Zod, TanStack Query, Zustand, Sonner",
+      frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Zod, Recharts, TanStack Query, Zustand, Sonner",
       backend: "Drizzle ORM, PostgreSQL, Hono, Clerk, Neon.tech",
       tools: "Tools",
     },
+    content: "An app that allows users to visualize and track all income and expenses on a monthly basis.",
+    features: [
+      "Import a monthly CVS report from your bank, or add single transactions.",
+      "Allows the tracking of multiple accounts.",
+      "Categorize your transactions to enable insights into spending habbits.",
+      "Displays your monthly profit/savings to better understand your finances."
+    ],
   },
   {
     id: 2,
     title: 'CEREBRAL SOLUTIONS',
-    url: 'URL',
+    url: 'Not Hosted',
     displayImage: '/Cerebral-Solutions/landing.PNG',
     description: 'AI-Powered mental health tracker.',
     images: [
@@ -84,6 +93,13 @@ export const projects = [
       backend: "Prisma ORM, PostgreSQL, NextAuth, Neon.tech",
       tools: "Vercel, Concurrently, bcrypt",
     },
+    content: "Scalable web platform offering AI-powered assessments and real-time video sessions." ,
+    features: [
+      "Set and track goals for your mental health journey.",
+      "Book a virtual appointment with a mental health specialist.",
+      "Take an AI-powered survey to gain insights into your mental health.",
+      "Watch videos in our resource library to supliment your appointments."
+    ],
   },
   {
     id: 3,
@@ -105,6 +121,11 @@ export const projects = [
       backend: "No backend needed!",
       tools: "AWS Amplify, AWS Route 53",
     },
+    content: "A website created by Merrick Pilon (that's me!) to showcase current, past, and furture projects!",
+    features: [
+      "Links to Github, LinkedIn, and my projects.",
+      "Carousels to display my projects."
+    ],
   },
   {
     id: 4,
@@ -118,9 +139,14 @@ export const projects = [
     ],
     technologies: {
       languages: "TypeScript, JavaScript",
-      frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Zod, TanStack Query, Zustand, Sonner",
+      frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Recharts, Zod, TanStack Query, Zustand, Sonner",
       backend: "AWS DynamoDB, Hono, Clerk",
       tools: "AWS Ampify",
     },
+    content: "A real-time stock market tracker.",
+    features: [
+      "Search through daily top stock gainers/losers, and most traded.",
+      "Search for individual stocks to recieve real time data."
+    ],
   },
 ];
