@@ -124,7 +124,8 @@ export const projects = [
     content: "A website created by Merrick Pilon (that's me!) to showcase current, past, and furture projects!",
     features: [
       "Links to Github, LinkedIn, and my projects.",
-      "Carousels to display my projects."
+      "Carousels to display my projects.",
+      "Download my Resume!"
     ],
   },
   {
