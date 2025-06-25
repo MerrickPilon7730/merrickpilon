@@ -33,10 +33,14 @@ export function ProjectImages({project, isActive}: Props) {
         return () => window.removeEventListener('keydown', handleKey);
     }, [next, prev, isActive]);
 
+    useEffect(() => {
+        setCurrent(0); 
+    }, [project?.id]);
+
     if (!project || total === 0) return null;
     
-    const image = project.images[current];
-    const imageDescription = project.imageDescription[current];
+    const image = project.images?.[current] || null;
+    const imageDescription = project.imageDescription[current] || null;
 
     return(
         <div className="flex flex-col mx-auto w-[90%]">
@@ -50,12 +54,14 @@ export function ProjectImages({project, isActive}: Props) {
                 </button>
 
                 <div className="relative w-full h-60 flex items-center justify-center overflow-hidden">
+                {image && (
                     <Image
-                    src={image}
-                    alt={project.title}
-                    fill
-                    className="object-cover rounded-2xl border-2 border-black dark:border-white"
+                        src={image}
+                        alt={project.title}
+                        fill
+                        className="object-cover rounded-2xl border-2 border-black dark:border-white"
                     />
+                )}
                 </div>
 
                 <button

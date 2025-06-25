@@ -54,7 +54,8 @@ export function ProjectCarousel() {
           <ProjectModal
             isOpen={true}
             onClose={() => setIsModalOpen(false)}
-            project={project}
+            projects={projects}
+            initialProjectIndex={current}
           />
         )}
 
