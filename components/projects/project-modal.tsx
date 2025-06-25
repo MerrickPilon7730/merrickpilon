@@ -54,9 +54,9 @@ export function ProjectModal({isOpen, onClose, projects, initialProjectIndex}: P
                     <ChevronLeft />
                 </button>
                 
-                <Card className="bg-white flex-col dark:bg-gray-800 dark:text-white">
+                <Card className="bg-white dark:bg-gray-800 dark:text-white w-full min-h-[600px] max-h-[80vh] overflow-y-auto">
                     <CardHeader>
-                        <CardTitle className="grid grid-cols-1 lg:grid-cols-2 gap-x-2 w-[95%] mx-auto mt-2">
+                        <CardTitle className="grid grid-cols-1 lg:grid-cols-2 gap-x-2 w-[95%] mx-auto mt-2 min-h-[300px]">
                             <div className="order-1 lg:order-2">
                                 <ProjectHeader project={project}/>
                             </div>
