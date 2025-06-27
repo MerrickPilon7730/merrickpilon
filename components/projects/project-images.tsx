@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 import { ProjectType } from "@/lib/projects"
+import { ImageModal } from "./image-modal";
 
 type Props = {
     project: ProjectType | null;
@@ -12,6 +13,7 @@ type Props = {
 
 export function ProjectImages({project, isActive}: Props) {
     const [current, setCurrent] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const total = project?.images.length ?? 0;
 
     const next = useCallback(() => {
@@ -53,15 +55,18 @@ export function ProjectImages({project, isActive}: Props) {
                 <ChevronLeft />
                 </button>
 
-                <div className="relative w-full h-60 flex items-center justify-center overflow-hidden">
-                {image && (
-                    <Image
-                        src={image}
-                        alt={project.title}
-                        fill
-                        className="object-cover rounded-2xl border-2 border-black dark:border-white"
-                    />
-                )}
+                <div 
+                    className="relative w-full h-60 flex items-center justify-center overflow-hidden"
+                    onClick={() => setIsModalOpen(true)}
+                    >
+                    {image && (
+                        <Image
+                            src={image}
+                            alt={project.title}
+                            fill
+                            className="object-cover rounded-2xl border-2 border-black dark:border-white"
+                        />
+                    )}
                 </div>
 
                 <button
@@ -87,6 +92,15 @@ export function ProjectImages({project, isActive}: Props) {
             <div className="flex mx-auto mt-4 font-mono h-10 max-w-[80%]">
                 <p>{imageDescription}</p>
             </div>
+
+            {isModalOpen && (
+                <ImageModal 
+                    project={project}
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    initialImageIndex={current}
+                />
+            )}
         </div>
     );
 };
