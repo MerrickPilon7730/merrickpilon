@@ -42,7 +42,7 @@ export function ImageModal({ isOpen, onClose, project, initialImageIndex }: Prop
         >
             <button
             onClick={goPrev}
-            className="absolute left-2 sm:left-[-2rem] top-1/2 -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 sm:p-3 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 z-10"
+            className="absolute left-2 sm:left-[-2rem] top-1/2 -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 sm:p-3 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 z-10hover:cursor-pointer"
             >
             <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
             </button>
@@ -66,7 +66,7 @@ export function ImageModal({ isOpen, onClose, project, initialImageIndex }: Prop
 
             <button
             onClick={goNext}
-            className="absolute right-2 sm:right-[-2rem] top-1/2 -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 sm:p-3 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 z-10"
+            className="absolute right-2 sm:right-[-2rem] top-1/2 -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 sm:p-3 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 z-10 hover:cursor-pointer"
             >
             <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
             </button>
