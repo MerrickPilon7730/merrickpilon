@@ -64,7 +64,7 @@ export function ProjectImages({project, isActive}: Props) {
                             src={image}
                             alt={project.title}
                             fill
-                            className="object-cover rounded-2xl border-2 border-black dark:border-white"
+                            className="object-cover rounded-2xl border-2 border-black dark:border-white hover:cursor-pointer"
                         />
                     )}
                 </div>
