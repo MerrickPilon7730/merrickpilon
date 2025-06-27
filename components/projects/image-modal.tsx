@@ -52,7 +52,8 @@ export function ImageModal({ isOpen, onClose, project, initialImageIndex }: Prop
                 <Image
                 src={currentImage}
                 alt={project.title}
-                fill
+                height={1900}
+                width={1000}
                 className="object-cover rounded-2xl border-2 border-black dark:border-white"/>
             </CardContent>
 
