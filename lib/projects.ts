@@ -50,8 +50,8 @@ export const projects = [
     technologies: {
       languages: "TypeScript, JavaScript",
       frontend: "Next.js, React, Tailwind CSS, Shadcn UI, Zod, Recharts, TanStack Query, Zustand, Sonner",
-      backend: "Drizzle ORM, PostgreSQL, Hono, Clerk, Neon.tech",
-      tools: "Tools",
+      backend: "Drizzle ORM, PostgreSQL, Hono, Clerk, Neon.tech, react-papaparse",
+      tools: "Vercel",
     },
     content: "An app that allows users to visualize and track all income and expenses on a monthly basis.",
     features: [
