@@ -81,9 +81,10 @@ export const projects = [
       languages: "TypeScript, JavaScript",
       frontend: "Next.js, React,Tailwind CSS, react-chessboard",
       backend: "chess.js, stockfish, OpenAI(o3-mini)",
-      tools: "",
+      tools: "Docker, Kubernetes, WebSockets",
     },
-    content: "Web app that allows you to play chess against Stockfish (chess engine) and learn from AI as you play as well!" ,
+    content: 'Web app that lets you play chess against Stockfish (chess engine) and learn from AI as you play! ' + 
+      'It is being updated to support matches against other players and custom chess variants, using WebSockets, Docker, and Kubernetes for scalability.',
     features: [
       "Play at lower levels to practice your openings.",
       "Play at higher levels to practice your middle and late game.",
