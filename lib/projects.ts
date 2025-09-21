@@ -28,7 +28,7 @@ export const projects = [
   {
     id: 1,
     title: 'BUDGETING APP',
-    url: 'Not Hosted',
+    url: 'https://budge-eta.vercel.app/',
     displayImage: '/BudgetApp/overview.PNG',
     description: 'Track your monthly income and expenses.',
     images: [
@@ -61,8 +61,37 @@ export const projects = [
       "Displays your monthly profit/savings to better understand your finances."
     ],
   },
-  {
+    {
     id: 2,
+    title: 'Back-Rank Chess',
+    url: 'Not Hosted',
+    displayImage: '/Back-Rank-Chess/learn-screen.PNG',
+    description: 'A Chess app where you can play and learn through the power of AI.',
+    images: [
+      '/Back-Rank-Chess/landing.PNG',
+      '/Back-Rank-Chess/play-screen.PNG',
+      '/Back-Rank-Chess/learn-screen.PNG',
+    ],
+    imageDescription:[
+      "Start Screen to select dificulty.",
+      "A chess game in progress.",
+      "Chess game being analyzed by OpenAI's o3-mini",
+    ],
+    technologies: {
+      languages: "TypeScript, JavaScript",
+      frontend: "Next.js, React,Tailwind CSS, react-chessboard",
+      backend: "chess.js, stockfish, OpenAI(o3-mini)",
+      tools: "",
+    },
+    content: "Web app that allows you to play chess against Stockfish (chess engine) and learn from AI as you play as well!" ,
+    features: [
+      "Play at lower levels to practice your openings.",
+      "Play at higher levels to practice your middle and late game.",
+      "Play a game and get explainations about your current position to help you learn!"
+    ],
+  },
+  {
+    id: 3,
     title: 'CEREBRAL SOLUTIONS',
     url: 'Not Hosted',
     displayImage: '/Cerebral-Solutions/landing.PNG',
@@ -102,7 +131,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'MY WEBSITE!',
     url: 'www.merrickpilon.ca',
     displayImage: '/Website/website.PNG',
@@ -129,7 +158,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'TICKER TRACKER(IN PROGRESS)',
     url: 'main.duhl94hce2rn6.amplifyapp.com/',
     displayImage: '/TickerTracker/search.PNG',
