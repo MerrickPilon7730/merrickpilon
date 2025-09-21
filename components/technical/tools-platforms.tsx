@@ -2,6 +2,8 @@
 
 const tools = [
     "AWS",
+    "Docker",
+    "Kubernetes",
     "Vercel",
     "Azure DevOps",
     "Git",
