@@ -63,7 +63,7 @@ export const projects = [
   },
     {
     id: 2,
-    title: 'Back-Rank Chess',
+    title: 'Back-Rank Chess/Chaos Chess',
     url: 'Not Hosted',
     displayImage: '/Back-Rank-Chess/learn-screen.PNG',
     description: 'A Chess app where you can play and learn through the power of AI.',
@@ -71,11 +71,15 @@ export const projects = [
       '/Back-Rank-Chess/landing.PNG',
       '/Back-Rank-Chess/play-screen.PNG',
       '/Back-Rank-Chess/learn-screen.PNG',
+      '/Back-Rank-Chess/chaos-landing.PNG',
+      '/Back-Rank-Chess/chaos-play.PNG'
     ],
     imageDescription:[
       "Start Screen to select dificulty.",
       "A chess game in progress.",
       "Chess game being analyzed by OpenAI's o3-mini",
+      "New layout and landing page being developed",
+      "New layout and chess variants to come!"
     ],
     technologies: {
       languages: "TypeScript, JavaScript",
