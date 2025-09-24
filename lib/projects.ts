@@ -28,7 +28,7 @@ export const projects = [
   {
     id: 1,
     title: 'BUDGETING APP',
-    url: 'https://budge-eta.vercel.app/',
+    url: 'budge-eta.vercel.app/',
     displayImage: '/BudgetApp/overview.PNG',
     description: 'Track your monthly income and expenses.',
     images: [
