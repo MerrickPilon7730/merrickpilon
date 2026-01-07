@@ -98,7 +98,7 @@ export const projects = [
 	{
 		id: 3,
 		title: 'DUOLINGO CLONE',
-		url: 'https://duolingo-clone-merrick-pilon.vercel.app/',
+		url: 'duolingo-clone-merrick-pilon.vercel.app/',
 		displayImage: '/DuolingoClone/landing-page.PNG',
 		description: 'A Duolingo Clone',
 		images: [
