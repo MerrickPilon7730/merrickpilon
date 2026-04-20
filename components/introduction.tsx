@@ -8,7 +8,7 @@ export function Introduction() {
     return(
         <div className="flex flex-col mx-auto">
             <h1 className="text-4xl font-bold mx-auto">MERRICK PILON</h1>
-            <h2 className="mx-auto mt-2 font-bold">JUNIOR WEB DEVELOPER</h2>
+            <h2 className="mx-auto mt-2 font-bold">Software Engineer</h2>
             <div className="flex mx-auto gap-x-5 mt-2">
                 <a
                     href="https://www.linkedin.com/in/merrick-pilon/"
